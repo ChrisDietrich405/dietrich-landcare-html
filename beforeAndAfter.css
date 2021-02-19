@@ -1,0 +1,77 @@
+:root {
+    --main-color: #448c7e ;
+  }
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    margin-top: 40px; 
+    margin-bottom: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+hr {
+    color: black;
+    width: 80%;
+    height: 1px;
+    margin: 20px auto; 
+    border-radius: 20px;
+    margin-bottom: 90px;
+}
+
+main {
+    background-color: white;
+}
+
+p {
+    display: flex;
+    font-size: 40px;
+    color: var(--main-color);
+}
+
+.whatever {
+    width: 100%;
+    text-align: center; 
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 100px;
+    grid-template-areas: "boxone boxtwo"
+    "boxthree boxfour"
+}
+
+.boxone,
+.boxtwo,
+.boxthree,
+.boxfour {
+    position: relative;
+}
+
+
+.boxone p,
+.boxtwo p,
+.boxthree p,
+.boxfour p {
+    padding: 20px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: .8;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    transform: translate(-40px, 10px);
+}
+
+.boxone img,
+.boxtwo img,
+.boxthree img,
+.boxfour img {
+    grid-area: boxone;
+    width: 800px;
+    height: 800px; 
+    box-shadow: 5px 10px 8px 10px #888888;
+    border-radius: 20px;
+}
